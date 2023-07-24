@@ -8,7 +8,7 @@ import { v4 as uuidV4 } from "uuid";
 
 const router = createBrowserRouter([
   {
-    path: "*",
+    path: "/",
     element: <Navigate to={`/documents/${uuidV4()}`} />,
   },
 
