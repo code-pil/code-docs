@@ -23,7 +23,7 @@ const TextEditor = () => {
   const { id: documentId } = useParams();
 
   useEffect(() => {
-    const s = io("https://codocs.onrender.com");
+    const s = io("http://localhost:4000");
     setSocket(s);
 
     return () => {
