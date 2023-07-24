@@ -12,7 +12,7 @@ try {
 
 const io = require("socket.io")(process.env.PORT || 3001, {
   cors: {
-    origin: process.env.ORIGIN_URL,
+    origin: "https://docs.codepil.site/",
     methods: ["GET", "POST"],
   },
 });
