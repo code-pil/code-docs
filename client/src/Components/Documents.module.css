@@ -1,0 +1,44 @@
+.documents {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+  width: 50vw;
+  margin: 5vh 20vw 0 30vw;
+}
+
+.documents ul {
+  width: inherit;
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.documents li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1.5rem;
+  font-size: 2vh;
+}
+
+.documents a {
+  overflow-x: hidden;
+  color: #263a8f;
+}
+
+.documents a:visited {
+  color: #d865ab;
+}
+
+.documents p {
+  padding: 0 1vw 0 0;
+  font-size: 1.5vh;
+  color: #a0a1aa;
+}
+
+.documents p span {
+  color: black;
+}
