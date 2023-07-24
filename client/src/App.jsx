@@ -1,16 +1,15 @@
-import TextEditor from "./Components/TextEditor";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Auth, Root } from "./Pages";
-import { Documents } from "./Components";
+import TextEditor from "./TextEditor";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
+import { v4 as uuidV4 } from "uuid";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Root />,
-    children: [
-      { index: true, element: <Documents /> },
-      { path: "/auth", element: <Auth /> },
-    ],
+    path: "*",
+    element: <Navigate to={`/documents/${uuidV4()}`} />,
   },
 
   {
