@@ -23,7 +23,7 @@ const TextEditor = () => {
   const { id: documentId } = useParams();
 
   useEffect(() => {
-    const s = io(import.meta.env.VITE_BASE_URL);
+    const s = io("https://codocs.onrender.com");
     setSocket(s);
 
     return () => {
