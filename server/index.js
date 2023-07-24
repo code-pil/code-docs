@@ -13,7 +13,6 @@ try {
 const io = require("socket.io")(process.env.PORT || 3001, {
   cors: {
     origin: "*",
-    methods: ["GET", "POST"],
   },
 });
 
